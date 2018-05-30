@@ -1,0 +1,426 @@
+//初始化样式
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden], template {
+  display: none
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 0
+}
+
+abbr[title] {
+  border-bottom: 1px dotted
+}
+
+b, strong {
+  font-weight: bold
+}
+
+dfn {
+  font-style: italic
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0
+}
+
+mark {
+  background: #ff0;
+  color: #000
+}
+
+small {
+  font-size: 80%
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sup {
+  top: -0.5em
+}
+
+sub {
+  bottom: -0.25em
+}
+
+img {
+  border: 0
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+figure {
+  margin: 1em 40px
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0
+}
+
+pre {
+  overflow: auto
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0
+}
+
+button {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+  cursor: default
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+input {
+  line-height: normal
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+  border: 0;
+  padding: 0
+}
+
+textarea {
+  overflow: auto
+}
+
+optgroup {
+  font-weight: bold
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td, th {
+  padding: 0
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline
+}
+
+html {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle
+}
+
+q, blockquote {
+  quotes: none
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none
+}
+
+a img {
+  border: none
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block
+}
+
+/*清楚浮动*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/*解决ie6的兼容性问题*/
+
+footer {
+  background: #ebb2ff;
+  display: flex;
+  justify-content : space-between;
+  width: 690px;
+  height: 98px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 30px;
+  a{
+    display: block;
+    width: 78px;
+    margin-top: 8px;
+    i {
+      display: block;
+      margin: 0 auto;
+    }
+    b {
+      display: block;
+      text-align: center;
+      line-height: 24px;
+      width: 78px;
+      font-size: 20px;
+      margin-top: 10px;
+      color: #333333;
+    }
+  }
+}
+.home-page{
+  footer {
+    a i {
+      background: url("../img/home_f_index.png") no-repeat;
+      width: 46px;
+      height: 46px;
+      background-size: 46px;
+    }
+    a+a i {
+      background: url("../img/home_f_class.png") no-repeat;
+      width: 46px;
+      height: 46px;
+      background-size: 46px;
+    }
+    a+a+a i {
+      background: url("../img/home_f_shopcart.png") no-repeat;
+      width: 51px;
+      height: 46px;
+      background-size: 51px 46px;
+    }
+    a+a+a+a i {
+      background: url("../img/home_f_user.png") no-repeat;
+      width: 41px;
+      height: 46px;
+      background-size: 41px 46px;
+    }
+  }
+}
+.categories-page{
+  footer {
+    a i {
+      background: url("../img/order_f_index.png") no-repeat;
+      width: 52px;
+      height: 46px;
+      background-size: 52px 46px;
+    }
+    a+a i {
+      background: url("../img/class_f_index.png") no-repeat;
+      width: 46px;
+      height: 46px;
+      background-size: 46px 46px;
+    }
+    a+a+a i {
+      background: url("../img/home_f_shopcart.png") no-repeat;
+      width: 52px;
+      height: 46px;
+      background-size: 52px 46px;
+    }
+    a+a+a+a i {
+      background: url("../img/home_f_user.png") no-repeat;
+      width: 41px;
+      height: 46px;
+      background-size: 41px 46px;
+    }
+
+  }
+}
+.shopcart-page{
+  footer{
+    a i{
+      background: url("../img/order_f_index.png")no-repeat;
+      width: 52px;
+      height: 46px;
+      background-size: 52px 46px;
+    }
+    a+a i{
+      background: url("../img/home_f_class.png")no-repeat;
+      width: 46px;
+      height: 46px;
+      background-size: 46px 46px;
+    }
+    a+a+a i{
+      background: url("../img/shop_cart_f.png")no-repeat;
+      width: 52px;
+      height: 46px;
+      background-size: 52px 46px;
+    }
+    a+a+a+a i{
+      background: url("../img/home_f_user.png") no-repeat;
+      width: 40px;
+      height: 46px;
+      background-size: 40px 46px;
+    }
+
+  }
+}
+.user-page{
+  footer{
+    a i{
+      background: url("../img/order_f_index.png")no-repeat;
+      width: 46px;
+      height: 46px;
+      background-size: 46px 46px;
+    }
+    a+a i{
+      background: url("../img/home_f_class.png")no-repeat;
+      width: 46px;
+      height: 46px;
+      background-size: 46px 46px;
+    }
+    a+a+a i{
+      background: url("../img/home_f_shopcart.png")no-repeat;
+      width: 51px;
+      height: 46px;
+      background-size: 51px 46px;
+    }
+    a+a+a+a i{
+      background: url("../img/order_f_user.png") no-repeat;
+      width: 42px;
+      height: 46px;
+      background-size: 42px 46px;
+    }
+
+
+  }
+}
+
+header{
+  form {
+    width: 500px;
+    overflow: hidden;
+    float: left;
+    border-radius: 25px;
+    height: 50px;
+    margin: 18px 44px 18px 26px;
+    background: #fff;
+    input {
+      outline: none;
+      float: left;
+      border: none;
+      line-height: 50px;
+      height: 50px;
+      width: 430px;
+      background: #fff;
+      text-indent: 38px;
+      font-size: 26px;
+      color: #616161;
+    }
+    button {
+      float: left;
+      background: url("../img/home_search_btn_06.png") transparent;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      border: none;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,429 @@
+
+.confirm-order-page {
+
+  .header {
+    background: #cf4cff;
+    padding: 16px 30px 22px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    .header-prev {
+      float: left;
+      background: url("../img/confirm_order1.png") no-repeat;
+      background-size: 28px 44px;
+      width: 28px;
+      height: 44px;
+      margin-left: 10px;
+    }
+    span {
+      float: left;
+      color: #fefefe;
+      font-size: 30px;
+      line-height: 44px;
+    }
+    .header-confirm {
+      margin-left: 248px;
+      margin-right: 220px;
+    }
+  }
+  .main {
+    .message {
+      overflow: hidden;
+      background: #fff;
+      padding: 30px 30px 58px;
+      border-bottom: 1px solid #cccccc; /*no*/
+      span {
+        float: left;
+        font-size: 24px;
+        color: #666;
+      }
+      .message-consignee {
+        margin-left: 48px;
+        margin-right: 126px;
+      }
+      .message-address {
+        line-height: 30px;
+        margin-top: 38px;
+        span {
+          float: left;
+          background: url("../img/confirm_order2.png") no-repeat;
+          background-size: 25px 32px;
+          width: 25px;
+          height: 32px;
+          margin-right: 22px;
+        }
+        .message-next {
+          float: right;
+          width: 17px;
+          height: 28px;
+          margin-left: 74px;
+          background: url("../img/confirm_order3.png") no-repeat;
+          background-size: 17px 28px;
+        }
+      }
+    }
+    .news {
+      overflow: hidden;
+      padding: 38px 30px 40px;
+      background: #fff;
+      margin-top: 20px;
+      margin-bottom: 100px;
+      li {
+        overflow: hidden;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted #999; /*no*/
+        img {
+          float: left;
+          width: 198px;
+          height: 198px;
+          border: 1px solid #666666; /*no*/
+          margin-top: 4px;
+        }
+        .news-right {
+          float: left;
+          width: 424px;
+          margin-left: 20px;
+          span {
+            float: left;
+            width: 424px;
+            font-size: 24px;
+            color: #d666ff;
+          }
+          .news-content {
+            margin-bottom: 18px;
+          }
+        }
+        .news-bottom {
+          float: left;
+          width: 424px;
+          margin-top: 28px;
+          margin-left: 12px;
+          span {
+            float: left;
+            font-size: 30px;
+          }
+          .news-price {
+            width: 424px;
+            color: #ff3352;
+            border: none;
+          }
+          .news-bottom-center {
+            float: left;
+            border: 1px solid #666666; /*no*/
+            margin-top: 18px;
+            .news-minus {
+              width: 30px;
+              height: 32px;
+              text-align: center;
+            }
+            .news-number {
+              float: left;
+              border: none;
+              text-align: center;
+              outline: none;
+              width: 58px;
+              height: 30px;
+              line-height: 30px;
+              font-size: 30px;
+            }
+            .news-plus {
+              width: 30px;
+              height: 32px;
+              text-align: center;
+            }
+          }
+        }
+        .mode {
+          width: 690px;
+          float: left;
+          overflow: hidden;
+          background: #ffffff;
+          margin-top: 20px;
+          padding: 37px 30px;
+          border-bottom: 1px solid #cccccc; /*no*/
+          span {
+            float: left;
+            font-size: 24px;
+            color: #333333;
+            line-height: 28px;
+          }
+          .mode-act1 {
+            float: right;
+            margin-right: 60px;
+          }
+
+          .mode-act2 {
+            float: right;
+            background: url("../img/confirm_order3.png") no-repeat;
+            width: 17px;
+            height: 28px;
+            background-size: 17px 28px;
+            margin-right: 44px;
+          }
+          .mode-act3 {
+            color: #ccc;
+            margin-left: 24px;
+          }
+        }
+        .mode-1 {
+          float: left;
+          margin-top: 0;
+        }
+        .mode-2 {
+          float: left;
+          width: 690px;
+          border-bottom: none;
+          padding-top: 34px;
+          span {
+            font-size: 24px;
+          }
+          .mode-act4 {
+            float: right;
+            margin-right: 20px;
+          }
+          .mode-act5 {
+            float: right;
+            i {
+              float: right;
+              margin-left: 0;
+              font-size: 30px;
+              color: #ff3352;
+            }
+          }
+        }
+      }
+      li ~ li {
+        margin-top: 20px;
+      }
+
+    }
+  }
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ebb2ff;
+    width: 100%;
+    height: 96px;
+    overflow: hidden;
+    span{
+      float: right;
+      line-height: 98px;
+      font-size: 30px;
+      color: #333;
+    }
+    .footer-price{
+      font-size: 36px;
+      color: #ff3352;
+      margin-left: 26px;
+      margin-right: 26px;
+    }
+    .footer-submit{
+      margin-left: 0;
+      text-align: center;
+      width: 180px;
+      line-height: 98px;
+      font-size: 36px;
+      background: #cf4cff;
+      color: #ebb2ff;
+    }
+  }
+  .pay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    .background-color{
+      width: 100%;
+      height: 100%;
+      background: #adadad;
+      opacity: 0.7;
+    }
+    .pay-wrap{
+      position: fixed;
+      bottom: 0;
+      background: #fff;
+    }
+    .pay-payment{
+      float: left;
+      padding: 34px 30px;
+      width: 690px;
+      background: #fff;
+      border-bottom: 1px solid #cccccc;
+      .payment-close{
+        float: left;
+        background: url("../img/pay_img1.png")no-repeat;
+        background-size: 33px 33px;
+        width: 33px;
+        height: 33px;
+        margin-top: 5px;
+      }
+      .payment-affirm{
+        float: left;
+        font-size: 36px;
+        padding: 0 226px 0 240px;
+        line-height: 44px;
+      }
+      .payment-help{
+        float: left;
+        background: url("../img/pay_img2.png")no-repeat;
+        width: 44px;
+        height: 44px;
+        background-size: 44px 44px;
+      }
+    }
+    .pay-main{
+      width: 100%;
+      overflow: hidden;
+      .pay-sum{
+        float: left;
+        width: 690px;
+        background: #fff;
+        padding: 0 30px;
+        border-bottom: 1px solid #cccccc;
+        span{
+          display: inline-block;
+          font-size: 24px;
+          color: #666;
+          margin-bottom: 10px;
+        }
+        .sum-act1{
+          font-weight: bold;
+          font-size: 72px;
+          line-height: 52px;
+          margin: 78px 200px 84px;
+          color: #333;
+        }
+        .sum-act2{
+          float: right;
+        }
+      }
+      .pay-mode{
+        float: left;
+        width: 690px;
+        padding: 36px 30px;
+        border-bottom: 1px solid #cccccc;/*no*/
+        span{
+          font-size: 24px;
+          line-height: 28px;
+          color: #666;
+        }
+        .pay-mode-act1{
+          margin-left: 460px;
+        }
+        .pay-mode-act2{
+          background: url("../img/confirm_order3.png")no-repeat;
+          width: 17px;
+          height: 28px;
+          background-size: 17px 28px;
+          margin-left: 30px;
+        }
+      }
+      .pay-immediate{
+        float: left;
+        background: #fff;
+        padding: 318px 30px 30px;
+        .immediate-act{
+          float: left;
+          text-align: center;
+          width: 690px;
+          line-height: 70px;
+          background: #cf4cff;
+          color: #fff;
+          border-radius: 14px;
+        }
+      }
+    }
+    .pay-success{
+      overflow: hidden;
+      width: 100%;
+      height: 700px;
+      background-color: #fff;
+      .pay-mistake{
+        float: left;
+        margin: 255px 0;
+        padding-left: 208px;
+        overflow: hidden;
+        .mistake-act1{
+          float: left;
+          background: url("../img/pay_success_img.png")no-repeat;
+          background-size: 100px 100px;
+          width: 100px;
+          height: 100px;
+        }
+        .mistake-act2{
+          float: left;
+          line-height: 100px;
+          margin-left: 34px;
+          font-size: 48px;
+          color: #333;
+        }
+      }
+      .failure-immediate{
+        float: left;
+        padding: 0 30px 62px;
+        background: #fff;
+        a{
+          float: left;
+          text-align: center;
+          width: 300px;
+          line-height: 70px;
+          font-size: 48px;
+          border-radius: 14px;
+          color: #fff;
+        }
+        .immediate-act1{
+          background: #d666ff;
+        }
+        .immediate-act2{
+          background: #cf4cff;
+          margin-left: 90px;
+        }
+      }
+    }
+    .pay-failure{
+      .pay-mistake{
+        float: left;
+        padding: 192px 212px 336px;
+        background: #fff;
+        .mistake-act1{
+          float: left;
+          background: url("../img/pay_failure_img.png")no-repeat;
+          width: 100px;
+          height: 100px;
+          background-size: 100px 100px;
+        }
+        .mistake-act2{
+          line-height: 100px;
+          margin-left: 34px;
+          font-size: 48px;
+          color: #333;
+        }
+      }
+      .failure-immediate{
+        float: left;
+        padding: 0 30px 62px;
+        background: #fff;
+        a{
+          float: left;
+          text-align: center;
+          width: 300px;
+          line-height: 70px;
+          font-size: 48px;
+          border-radius: 14px;
+          color: #fff;
+        }
+        .immediate-act1{
+          background: #d666ff;
+        }
+        .immediate-act2{
+          background: #cf4cff;
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+
+
+}
